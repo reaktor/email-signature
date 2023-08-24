@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>E-mail Signature Template</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+<main class="container">
+    <section class="column">
+        <form class="form">
+            <fieldset class="fieldset fieldset__office">
+                <legend>Office Location</legend>
+                <div class="column__radio-group">
+                    <div class="radio-group__option">
+                        <input type="radio" id="ams" name="office" value="ams" checked/>
+                        <label for="ams">Amsterdam</label>
+                    </div>
+
+                    <div class="radio-group__option">
+                        <input type="radio" id="hel" name="office" value="hel"/>
+                        <label for="hel">Helsinki</label>
+                    </div>
+
+                    <div class="radio-group__option">
+                        <input type="radio" id="tur" name="office" value="tur"/>
+                        <label for="tur">Turku</label>
+                    </div>
+
+                    <div class="radio-group__option">
+                        <input type="radio" id="tam" name="office" value="tam"/>
+                        <label for="tam">Tampere</label>
+                    </div>
+
+                    <div class="radio-group__option">
+                        <input type="radio" id="nyc" name="office" value="nyc"/>
+                        <label for="nyc">New York</label>
+                    </div>
+                </div>
+
+                <div class="column__radio-group">
+                    <div class="radio-group__option">
+                        <input type="radio" id="lis" name="office" value="lis"/>
+                        <label for="lis">Lisbon</label>
+                    </div>
+
+                    <div class="radio-group__option">
+                        <input type="radio" id="sei" name="office" value="sei"/>
+                        <label for="sei">Seinäjoki</label>
+                    </div>
+
+                    <div class="radio-group__option">
+                        <input type="radio" id="sto" name="office" value="sto"/>
+                        <label for="sto">Stockholm</label>
+                    </div>
+
+                    <div class="radio-group__option">
+                        <input type="radio" id="tok" name="office" value="tok"/>
+                        <label for="tok">Tokyo</label>
+                    </div>
+                </div>
+            </fieldset>
+
+            <fieldset class="fieldset fieldset__contact">
+                <legend>Contact Information</legend>
+                <label for="nameInput">Name / Pronouns</label>
+                <input class="form__text-input" type="text" id="nameInput" placeholder="Name">
+
+                <label for="titleInput">Title</label>
+                <input class="form__text-input" type="text" id="titleInput" placeholder="Title">
+
+                <label for="emailInput">E-mail</label>
+                <input class="form__text-input" type="email" id="emailInput" placeholder="E-mail">
+
+                <label for="phoneInput">Phone</label>
+                <input class="form__text-input" type="tel" id="phoneInput" placeholder="Phone">
+            </fieldset>
+        </form>
+    </section>
+
+    <section class="column">
+        <fieldset class="fieldset fieldset__style">
+            <legend>Template Style</legend>
+
+            <div class="fieldset-group">
+                <div class="radio-group__option">
+                    <input type="radio" id="whiteBackground" name="bg" value="whiteBackground" checked/>
+                    <label for="whiteBackground">White Background</label>
+                </div>
+                <div class="radio-group__option">
+                    <input type="radio" id="blackBackground" name="bg" value="blackBackground"/>
+                    <label for="blackBackground">Black Background</label>
+                </div>
+            </div>
+
+            <div class="fieldset-group">
+                <input type="checkbox" id="animate" name="animate"/>
+                <label for="animate">Animate!</label>
+            </div>
+
+            <div class="fieldset-group">
+                <label for="signOffInput">Sign off text</label>
+                <input class="form__text-input" type="text" id="signOffInput" placeholder="Sign off">
+            </div>
+        </fieldset>
+
+        <button id="copyButton" class="button">Copy template</button>
+        <a class="link" target="_blank" href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#settings/general">Gmail
+            settings</a>
+
+        <div id="copyContainer">
+            <span>&nbsp;</span>
+            <div id="signature" class="signature">
+                <br/>
+                <p id="signOffField"></p>
+                <br/>
+                <p id="nameField"></p>
+                <p id="titleField"></p>
+                <br/>
+                <p id="emailField"></p>
+                <p id="phoneField"></p>
+                <br/>
+                <p id="officeField" class="signature__block-office"></p>
+                <br/><br/>
+                &nbsp;&nbsp;&nbsp;<img id="logo" class="logo" src="./assets/logo_black.svg" alt="Reaktor logo">
+                <br/><br/>
+                <p>&nbsp;&nbsp;&nbsp;reaktor.com</p>
+                <br/>
+            </div>
+            <span>&nbsp;</span>
+        </div>
+
+    </section>
+</main>
+<script src="scripts/script.js" type="application/javascript"></script>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+@import "fieldset.css";
+@import "signature.css";
+
+body {
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  width: 100%;
+  max-width: 1024px;
+  margin: auto;
+}
+
+.container {
+  margin: auto;
+  width: 1024px;
+  display: flex;
+  gap: 16px;
+}
+
+.column {
+  flex: 1;
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
